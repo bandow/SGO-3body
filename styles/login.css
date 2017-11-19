@@ -1,0 +1,504 @@
+@charset "UTF-8";
+/* =================================================================
+* Reset Style for PC
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2017-10-20
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-family: Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, div, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*把所有元素的内边距和边框不再会增加它的宽度*/
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+}
+
+ol, ul {
+  /*去掉列表点*/
+  list-style: none;
+}
+
+table {
+  /*去掉表格的双行线*/
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*取消a标签在移动端点击时的背景颜色*/
+a, a:hover, a:active, a:visited, a:link, a:focus {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/hiragino.otf");
+}
+body.login-3body {
+  height: auto;
+  background: url(../images/login_bg.jpg) no-repeat center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.warpper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.header-3body {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.header-3body .logo {
+  float: left;
+  margin: 20px 0 0 40px;
+}
+.header-3body .logo .img {
+  width: 202px;
+  height: 55px;
+  background: url("../images/3body_icon.png") 0 0 no-repeat;
+}
+.header-3body .right {
+  float: right;
+  margin-right: 40px;
+}
+.header-3body .right p {
+  margin-top: 7px;
+  float: left;
+}
+.header-3body .right p i {
+  margin-top: 12px;
+  float: left;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url("../images/3body_icon.png") -204px 0 no-repeat;
+}
+.header-3body .right p span {
+  float: left;
+  margin-left: 15px;
+  font: 18px/48px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.header-3body .right > a {
+  margin-left: 36px;
+}
+.header-3body .right .setting {
+  margin-top: 10px;
+  float: left;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #383f52;
+  border-radius: 100%;
+}
+.header-3body .right .setting i {
+  margin-top: 12px;
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  background: url("../images/3body_icon.png") -232px 0 no-repeat;
+}
+.header-3body .right .close {
+  margin-top: 22px;
+  float: left;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url("../images/3body_icon.png") -254px 0 no-repeat;
+}
+
+.login-content-3body {
+  margin: 0 auto;
+  width: 100%;
+}
+.login-content-3body .login-content-3body-text {
+  margin: 0 auto;
+  width: 662px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px #13293a;
+}
+.login-content-3body .login-content-3body-text .lc3t-left {
+  float: left;
+  width: 270px;
+  height: 414px;
+  background: rgba(0, 168, 236, 0.7);
+}
+.login-content-3body .login-content-3body-text .lc3t-left .title {
+  padding: 20px 0 20px 36px;
+}
+.login-content-3body .login-content-3body-text .lc3t-left .title i {
+  float: left;
+  display: inline-block;
+  width: 40px;
+  height: 41px;
+  background: url("../images/3body_icon.png") -372px 0 no-repeat;
+}
+.login-content-3body .login-content-3body-text .lc3t-left .title span {
+  margin-left: 10px;
+  font: 18px/48px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.login-content-3body .login-content-3body-text .lc3t-left ul {
+  padding: 20px 0 0 36px;
+}
+.login-content-3body .login-content-3body-text .lc3t-left ul li {
+  width: 190px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #383f52;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.login-content-3body .login-content-3body-text .lc3t-left ul li i {
+  float: left;
+  margin: 1px;
+  width: 36px;
+  height: 36px;
+  background-color: #383f52;
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  font: 24px/36px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.login-content-3body .login-content-3body-text .lc3t-left ul li p {
+  width: 150px;
+  margin-left: -20px;
+  display: block;
+  text-align: center;
+  float: left;
+  font: 14px/38px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #383f52;
+}
+.login-content-3body .login-content-3body-text .lc3t-right {
+  float: left;
+  width: 390px;
+  height: 414px;
+  background: rgba(255, 255, 225, 0.1);
+}
+.login-content-3body .login-content-3body-text .lc3t-right h2 {
+  padding: 30px 0;
+  font: 30px/48px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.login-content-3body .login-content-3body-text .lc3t-right h2 span {
+  color: #00a8ec;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items {
+  margin: 0 30px 50px 30px;
+  overflow: hidden;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items .user {
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 19px;
+  background: url("../images/3body_icon.png") -276px 0 no-repeat;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items label {
+  float: left;
+  padding: 0 20px;
+  display: inline-block;
+  width: 260px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 0;
+  border: 1px solid #fff;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items label input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font: 14px/2 myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items label input::-webkit-input-placeholder {
+  color: #fff;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items .user-right {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background: url("../images/3body_icon.png") -302px 0 no-repeat;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items .password {
+  float: left;
+  margin-top: 12px;
+  margin-right: 13px;
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  background: url("../images/3body_icon.png") -329px 0 no-repeat;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .items .password-right {
+  float: left;
+  margin-left: 10px;
+  margin-top: 12px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url("../images/3body_icon.png") -353px 0 no-repeat;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .btn {
+  margin: 0 auto;
+  width: 260px;
+  height: 40px;
+  background-color: #137ac3;
+  border-radius: 30px;
+  box-shadow: 1px 3px 10px #1e5b7a;
+}
+.login-content-3body .login-content-3body-text .lc3t-right .btn a {
+  display: block;
+  font: 18px/40px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer-3body {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+.footer-3body #weather {
+  color: #FFF;
+}
+.footer-3body #weather i {
+  float: left;
+  display: inline-block;
+  background: no-repeat top left;
+  font: 30px/1 myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 36px;
+  text-align: center;
+  background-size: contain;
+}
+.footer-3body #weather i.icon-xiaoyu {
+  background-image: url("../images/xiaoyu.png");
+}
+.footer-3body #weather i.icon-zhongyu {
+  background-image: url("../images/zhongyu.png");
+}
+.footer-3body #weather i.icon-dayu {
+  background-image: url("../images/dayu.png");
+}
+.footer-3body #weather i.icon-qing {
+  background-image: url("../images/qing.png");
+}
+.footer-3body #weather i.icon-duoyun {
+  background-image: url("../images/duoyun.png");
+}
+.footer-3body #weather i.icon-yin {
+  background-image: url("../images/yin.png");
+}
+.footer-3body #weather p {
+  float: left;
+  display: inline-block;
+  font: 16px/30px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+}
+.footer-3body #weather p span {
+  margin: 0 10px;
+}
+
+.login-content-3body-select {
+  margin: 0 auto;
+  width: 904px;
+  height: 414px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.shct {
+  width: 904px;
+  height: 414px;
+}
+.shct .shct-top {
+  padding: 15px 40px 30px 40px;
+  overflow: hidden;
+}
+.shct .shct-top p {
+  float: left;
+  overflow: hidden;
+}
+.shct .shct-top p i {
+  float: left;
+  margin-top: 9px;
+  display: inline-block;
+  width: 24px;
+  height: 28px;
+  background: url("../images/3body_icon.png") -415px 0 no-repeat;
+}
+.shct .shct-top p span {
+  float: left;
+  margin-left: 10px;
+  display: inline-block;
+  font: 18px/48px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.shct .shct-top label {
+  padding: 0 0 0 29px;
+  margin-top: 9px;
+  float: right;
+  width: 260px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  background: rgba(245, 245, 245, 0.1);
+  overflow: hidden;
+}
+.shct .shct-top label input {
+  float: left;
+  width: 190px;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font: 14px/1 myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.shct .shct-top label input::-webkit-input-placeholder {
+  font: 14px/1 myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.shct .shct-top label .r {
+  float: left;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  filter: alpha(opacity=100 finishopacity=50 style=1 startx=0, starty=0, finishx=0, finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#03a1e6,endcolorstr=#246594,gradientType=0);
+  -ms-filter: alpha(opacity=100 finishopacity=50 style=1 startx=0, starty=0, finishx=0, finishy=150) progid:DXImageTransform.Microsoft.gradient(startcolorstr=#03a1e6,endcolorstr=#246594,gradientType=0);
+  /*IE8*/
+  background: #246594;
+  /* 一些不支持背景渐变的浏览器 */
+  background: -moz-linear-gradient(top, #03a1e6, #246594);
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#03a1e6), to(#246594));
+  background: -o-linear-gradient(top, #03a1e6, #246594);
+  cursor: pointer;
+}
+.shct .shct-top label .r i {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 17px;
+  height: 16px;
+  background: url("../images/3body_icon.png") -456px 0 no-repeat;
+  cursor: pointer;
+}
+.shct .shct-bottom {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+.shct .shct-bottom .hote-list {
+  padding: 0 40px;
+  overflow: hidden;
+}
+.shct .shct-bottom .hote-list ul {
+  overflow: hidden;
+}
+.shct .shct-bottom .hote-list ul li {
+  float: left;
+  width: 260px;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #383f52;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  margin-right: 17px;
+}
+.shct .shct-bottom .hote-list ul li:nth-child(3n) {
+  margin-right: 0;
+}
+.shct .shct-bottom .hote-list ul li .li-l {
+  float: left;
+  margin: 1px 5px 1px 1px;
+  width: 36px;
+  height: 36px;
+  background-color: #383f52;
+  border-radius: 100%;
+}
+.shct .shct-bottom .hote-list ul li .li-l i {
+  margin: 10px 0 0 12px;
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url("../images/3body_icon.png") -442px 0 no-repeat;
+}
+.shct .shct-bottom .hote-list ul li p {
+  margin-left: 4px;
+  font: 14px/40px pxmyFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+}
+.shct .shct-bottom .hote-list ul li.on {
+  background-color: #00a8ec;
+  border: 1px solid #00a8ec;
+}
+.shct .shct-bottom .hote-list ul li.on .li-l {
+  background-color: #00a8ec;
+}
+.shct .shct-bottom .btn {
+  margin: 50px auto 0;
+  width: 260px;
+  height: 40px;
+  background-color: #137ac3;
+  border-radius: 30px;
+  box-shadow: 1px 3px 10px #1e5b7a;
+}
+.shct .shct-bottom .btn a {
+  display: block;
+  font: 18px/40px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv=”X-UA-Compatible” content="IE=edge,chrome=1"/>   
+	<meta name=”description” content=""/>       
+	<meta name=”keywords” content=""/>      
+	<meta name=”author” content="name, bandow"/>         
+	<title>登录</title>
+	<link rel="stylesheet" href="styles/login.css">
+</head>
+<body class="login-3body">
+	<div class="warpper">
+		<div class="header-3body">
+			<div class="logo">
+				<div class="img"></div>
+			</div>
+			<div class="right">
+				<p><i></i><span id="date"></span><span id="week"></span><span id="time"></span></p>
+				<a class="setting" href="">
+					<i></i>
+				</a>
+				<a class="close" href=""></a>
+			</div>
+		</div>
+		<div class="login-content-3body">
+			<div class="login-content-3body-text">
+				<div class="lc3t-left">
+					<div class="title"><i></i><span>请选择班次</span></div>
+					<ul>
+						<li>
+							<a href="">
+								<i>A</i>
+								<p>早班</p>
+							</a>	
+						</li>
+						<li>
+							<a href="">
+								<i>B</i>
+								<p>中班</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i>C</i>
+								<p>晚班_夜审前</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i>D</i>
+								<p>晚班_夜审后</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="lc3t-right">
+					<h2><span>三</span>体PMS</h2>
+					<div class="items">
+						<i class="user"></i>
+						<label><input type="text" placeholder="用户名"></label>
+						<i class="user-right"></i>
+					</div>
+					<div class="items">
+						<i class="password"></i>
+						<label><input type="password" placeholder="密码"></label>
+						<i class="password-right"></i>
+					</div>
+					<div class="btn"><a href="loginSelectHotel.html">登录</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-3body">
+			<div class="city" id="weather"><span>广州</span><span>晴间多云</span></div>
+		</div>
+	</div>
+</body>
+<!-- script begin -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/leoweather/jquery.leoweather.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var windowHeight=$(window).height();
+		var headerHeight=$(".header-3body").height();
+		var bodyHeight=$(".login-content-3body-text").height();
+		var footerTop=(windowHeight-headerHeight-70-bodyHeight)/2;
+		$(".login-content-3body").css("marginTop",footerTop)
+		//运行时间
+		getMyTime();
+		//天气预报
+		$('#weather').leoweather({format:'<p>{城市}<span></span>{天气}<span></span></p><i class="icon-{图标}">{气温}℃</i>'});
+	});
+	//前面补0
+    function p(n){return n<10?'0'+n:n;}
+	//当前时间
+	function getMyTime(){
+        var myDate=new Date();
+        var year=myDate.getFullYear();
+        var month=myDate.getMonth()+1;
+        var day=myDate.getDate();
+        var week=myDate.getDay();
+        var array=['星期日','星期一','星期二','星期三','星期四','星期五','星期六',];
+        var hour=myDate.getHours();
+        var minute=myDate.getMinutes();
+        var second=myDate.getSeconds();
+        document.getElementById('date').innerHTML=year+'.'+month+'.'+day;
+        document.getElementById('week').innerHTML=array[week];
+        document.getElementById('time').innerHTML=p(hour)+':'+p(minute)+':'+p(second);
+        setTimeout('getMyTime()',500);
+    }
+</script>
+<!-- script end -->
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv=”X-UA-Compatible” content="IE=edge,chrome=1"/>   
+	<meta name=”description” content=""/>       
+	<meta name=”keywords” content=""/>      
+	<meta name=”author” content="name, bandow"/>         
+	<title>选择酒店</title>
+	<link rel="stylesheet" href="styles/login.css">
+</head>
+<body class="login-3body">
+	<div class="warpper">
+		<div class="header-3body">
+			<div class="logo">
+				<div class="img"></div>
+			</div>
+			<div class="right">
+				<p><i></i><span id="date"></span><span id="week"></span><span id="time"></span></p>
+				<a class="setting" href="">
+					<i></i>
+				</a>
+				<a class="close" href="login.html"></a>
+			</div>
+		</div>
+		<div class="login-content-3body-select">
+			<div class="shct">
+				<div class="shct-top">
+					<p><i></i><span>请选择酒店</span></p>
+					<label>
+						<input type="text" placeholder="查找酒店"><span class="r"><i></i></span>
+					</label>
+				</div>
+				<div class="shct-bottom">
+					<div class="shct-bottom-content">
+						<div class="hote-list">
+							<ul>
+								<li><div class="li-l"><i></i></div><p>果然心动主题酒店江汉路店</p></li>
+								<li><div class="li-l"><i></i></div><p>鑫鑫旅社</p></li>
+								<li><div class="li-l"><i></i></div><p>新梦宾馆</p></li>
+								<li><div class="li-l"><i></i></div><p>武汉清宿酒店管理有限公司</p></li>
+								<li><div class="li-l"><i></i></div><p>武汉国伯绿地睿锦酒店</p></li>
+								<li><div class="li-l"><i></i></div><p>城市便捷武汉丁字路店</p></li>
+								<li><div class="li-l"><i></i></div><p>7天酒店武汉光谷广场地质大学店</p></li>
+								<li><div class="li-l"><i></i></div><p>果然心动主题酒店江汉路店</p></li>
+								<li><div class="li-l"><i></i></div><p>鑫鑫旅社</p></li>
+								<li><div class="li-l"><i></i></div><p>新梦宾馆</p></li>
+								<li><div class="li-l"><i></i></div><p>武汉清宿酒店管理有限公司</p></li>
+								<li><div class="li-l"><i></i></div><p>武汉国伯绿地睿锦酒店</p></li>
+								<li><div class="li-l"><i></i></div><p>城市便捷武汉丁字路店</p></li>
+								<li><div class="li-l"><i></i></div><p>7天酒店武汉光谷广场地质大学店</p></li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn"><a href="">确定</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-3body">
+			<div class="city" id="weather"><span>广州</span><span>晴间多云</span></div>
+		</div>
+	</div>
+</body>
+<!-- script begin -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/leoweather/jquery.leoweather.min.js"></script>
+<script src="plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script>
+	$(document).ready(function(){
+		var windowHeight=$(window).height();
+		var headerHeight=$(".header-3body").height();
+		var bodyHeight=$(".login-content-3body-select").height();
+		var footerTop=(windowHeight-headerHeight-70-bodyHeight)/2;
+		$(".login-content-3body-select").css("marginTop",footerTop)
+		//运行时间
+		getMyTime();
+		//天气预报
+		$('#weather').leoweather({format:'<p>{城市}<span></span>{天气}<span></span></p><i class="icon-{图标}">{气温}℃</i>'});
+		//滚动条
+		$(".shct .shct-bottom .hote-list").slimScroll({
+            height: '200px'
+        });
+
+        $(".shct .shct-bottom .hote-list ul li").on("click",function(){
+        	$(this).addClass("on").siblings().removeClass("on");
+        });
+	});
+	//前面补0
+    function p(n){return n<10?'0'+n:n;}
+	//当前时间
+	function getMyTime(){
+        var myDate=new Date();
+        var year=myDate.getFullYear();
+        var month=myDate.getMonth()+1;
+        var day=myDate.getDate();
+        var week=myDate.getDay();
+        var array=['星期日','星期一','星期二','星期三','星期四','星期五','星期六',];
+        var hour=myDate.getHours();
+        var minute=myDate.getMinutes();
+        var second=myDate.getSeconds();
+        document.getElementById('date').innerHTML=year+'.'+month+'.'+day;
+        document.getElementById('week').innerHTML=array[week];
+        document.getElementById('time').innerHTML=p(hour)+':'+p(minute)+':'+p(second);
+        setTimeout('getMyTime()',500);
+    }
+</script>
+<!-- script end -->
+</html>
