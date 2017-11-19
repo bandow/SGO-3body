@@ -1,0 +1,644 @@
+@import 'public/base';
+@font-face{
+	font-family: myFirstFont;
+	src: url('../font/hiragino.otf')
+}
+body, #wrapper, html {
+    height: 100%;
+}
+.w1278{width:1278px;margin:0 auto;}
+.arrow-bottom {
+    position:relative;
+    &:after {
+	    content: '';
+	    position: absolute;
+	    top:50%;
+        right: 10px;
+	    width: 6px;
+	    height: 6px;
+	    border: 1px solid;
+	    border-bottom: 0;
+	    border-right: 0;
+	    margin-top: -6px;
+	    color: #00a8ec;
+	    @include transform(rotateZ(-135deg));
+	}
+}
+#wrapper{
+    width:100%;
+    padding:0 13px 0 15px;
+    background-color:#fdfdfd;
+}
+.room-state-content{
+	background-color:#fff;
+	overflow:hidden;
+	.left{
+		float:left;
+		background-color:#e2eaf3;
+		width:166px;
+		min-height:100%;
+		margin-bottom:-1000px;
+		padding-bottom:1100px;
+		dl{
+			dt{
+				padding:15px 10px;
+				overflow: hidden;
+				i{
+					&:first-child{
+						float:left;
+						margin-top:3px;
+						display:block;
+						width:21px;
+						height:22px;
+						background:url("../images/3body_icon.png") -212px -43px no-repeat;
+					}
+					&:last-child{
+						float:right;
+						margin-top:5px;
+						display:block;
+						width:16px;
+						height:17px;
+						background:url("../images/3body_icon.png") -212px -69px no-repeat;
+					}
+				}
+				span{
+					float:left;
+					margin-left:10px;
+					font:bold 24px/1.2 myFirstFont, $publicFont;
+					color:#2c3346;
+				}
+			}
+			dd{
+				padding-left:10px;
+				overflow:hidden;
+				cursor:pointer;
+				i{
+					float:left;
+					margin-top:16px;
+					display:block;
+					width:14px;
+					height:14px;
+					background:url("../images/3body_icon.png") no-repeat;
+				}
+				i.i1{background-position:-235px -44px;}
+				i.i2{background-position:-251px -44px;}
+				i.i3{background-position:-267px -44px;}
+				p{
+					padding:15px 10px 15px 0;
+					margin-left:24px;
+					font:14px/1.2 myFirstFont, $publicFont;
+					color:#575e6d;
+					border-bottom: 1px solid #fdfdfd;
+				}
+			}
+			dd.on{
+				background-color:#fff;
+			}
+		}
+		.proportion{
+			padding:15px 10px;
+			margin-top:80px;
+			border-top: 1px solid #fff;
+			p.tltie{
+				font:14px/1.2 myFirstFont, $publicFont;
+				color:#575e6d;
+			}
+			.num{
+				padding:0 10px;
+				background-color:#edf2f8;
+				border-radius:30px;
+				i{
+					float:left;
+					margin-top:10px;
+					display:block;
+					width:11px;
+					height:10px;
+					background:url("../images/3body_icon.png") -260px -76px no-repeat;
+				}
+				span{
+					margin-left:5px;
+					font:14px/30px myFirstFont, $publicFont;
+					color:#575e6d;
+				}
+				em{
+				    float:right;
+					font:14px/30px myFirstFont, $publicFont;
+					color:#00a8ec;
+				}
+			}
+			.proportion-line{
+				margin:10px 5px;
+				height:8px;
+				border-radius:30px;
+				background-color:#ddd;
+				>div{
+					float:left;
+				    height:100%;
+					&:first-child{
+						border-radius:30px 0 0 30px;
+					}
+					&:last-child{
+						border-radius:0 30px 30px 0;
+					}
+				}
+				.c1{
+					background-color:#a9d15b;
+				}
+				.c2{
+					background-color:#fd621f;
+				}
+				.c3{
+					background-color:#fde01f;
+				}
+				.c4{
+					background-color:#98aed3;
+				}
+				.c5{
+					background-color:#4dbeff;
+				}
+			}
+			p{
+				i{
+					margin-top:5px;
+					float:left;
+					border-radius:100%;
+					width:20px;
+					height:20px;				
+				}
+				i.c1{
+					background-color:#a9d15b;
+				}
+				i.c2{
+					background-color:#fd621f;
+				}
+				i.c3{
+					background-color:#fde01f;
+				}
+				i.c4{
+					background-color:#98aed3;
+				}
+				i.c5{
+					background-color:#4dbeff;
+				}
+				i.c6{
+					width:21px;
+					height:20px;
+					background:url("../images/3body_icon.png") -234px -66px no-repeat;
+				    border-radius: 0;
+				}
+				span{
+					margin-left:5px;
+					font:14px/30px myFirstFont, $publicFont;
+					color:#575e6d;
+				}
+				em{
+				    float:right;
+					font:14px/30px myFirstFont, $publicFont;
+					color:#00a8ec;
+				}
+			}
+		}
+	}
+	.right{
+		position:relative;
+		padding:20px 0 1100px 20px;
+		margin-left:166px;
+		margin-bottom:-1000px;
+		.right-l{
+			float:left;
+			width:22px;
+			height:auto;
+			background-color:#edf2f8;
+			dl{
+				padding-bottom:100px;
+				border:1px solid #ddd;
+				border-radius:3px;
+				dt{
+					i{
+						margin:20px 0 30px 4px;
+						display: block;
+						width:13px;
+						height:14px;
+						background:url("../images/3body_icon.png") -440px -16px no-repeat;
+					}
+				}
+				dd{
+					margin:10px 0;
+					font:12px/26px myFirstFont, $publicFont;
+					color:#58595b;
+					text-align:center;
+					cursor: pointer;
+				}
+				dd.on{
+					background-color:#fff;
+				}
+			}
+		}
+		.right-m{
+			margin:0 206px 0 35px;
+			ul{
+				li{
+					padding:5px;
+					float:left;
+					width:100px;
+					height:100px;
+					background-color:#edf2f8;
+					margin:0 3px 3px 0;
+					.name{
+						h5{
+							height:24px;
+							color:#fff;
+							font:14px/24px myFirstFont, $publicFont;
+						}
+					}
+					.icon{
+						height:20px;
+						>div{
+							float:left;
+							margin-left:5px;
+							display:inline-block;
+							width:20px;
+							height:20px;
+							border-radius:100%;
+							i{
+								display: block;
+								background:url("../images/3body_icon.png") no-repeat;
+							}
+							
+						}
+						.vip-icon{
+							background-color:#e2c500;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.leave-icon{
+							background-color:#fde01f;
+							i{
+								margin:5px 0 0 3px;
+								width:14px;
+								height:9px;
+								background-position:-415px -43px;
+							}
+						}
+						.stop-icon{
+							background-color:#fd621f;
+							i{
+								margin:2px 0 0 3px;
+								width:15px;
+								height:16px;
+								background-position:-347px -43px;
+							}
+						}
+						.cleaning-icon{
+							background-color:#62b3b6;
+							i{
+								margin:5px 0 0 3px;
+								width:12px;
+								height:12px;
+								background-position:-366px -43px;
+							}
+						}
+						.arrear-icon{
+							background-color:#d63c6e;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.inspect-icon{
+							background-color:#ffa308;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.dirty-icon{
+							background-color:#959ea7;
+							i{
+								margin:2px 0 0 4px;
+								width:12px;
+								height:16px;
+								background-position:-331px -43px;
+							}
+						}
+						.hour-icon{
+							background-color:#b65ece;
+							i{
+								margin:2px 0 0 3px;
+								width:14px;
+								height:15px;
+								background-position:-397px -43px;
+							}
+						}
+						.room-icon{
+							background-color:#98aed3;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.secrecy-icon{
+							background-color:#9ea7b1;
+							i{
+								margin:3px 0 0 4px;
+								width:12px;
+								height:13px;
+								background-position:-382px -43px;
+							}
+						}
+					}
+					.number{
+						height:24px;
+						color:#fff;
+						font:14px/24px myFirstFont, $publicFont;
+						text-align:right;
+					}
+					.sdk{
+						overflow:hidden;
+						color:#fff;
+						font:14px/1.2 myFirstFont, $publicFont;
+						span{
+							margin-top:3px;
+							float:left;
+						}
+						em{
+							float:right;
+							font-size:18px;
+						}
+					}
+				}
+				li.live{background-color:#9dc75b;}
+				li.clean{background-color:#00a8ec;}
+				li.stop{background-color:#fd621f;}
+				li.cleaning{background-color:#62b3b6;}
+				li.dirty{background-color:#959ea7;}
+			}
+		}
+		.right-r{
+		    position: absolute;
+		    top: 20px;
+		    right:10px;
+			width:196px;
+			.click{
+				position:absolute;
+				top:50%;
+				left:0;
+				margin-top:-5px;
+				width:10px;
+				height:40px;
+				background-color:#e1e9f2;
+			}
+			.click-text{
+				padding-left:15px;
+				margin-left:10px;
+				width:186px;
+				height:auto;
+				border-left:1px solid #ddd;
+				label{
+					display:block;
+					padding:0 8px;
+					width:100%;
+					height:30px;
+					border:1px solid #ddd;
+					background-color:#edf2f8;
+					border-radius:30px;
+					overflow:hidden;
+					i{
+						&:first-child{
+							float:left;
+							margin-top:8px;
+							display:inline-block;
+							width:14px;
+							height:14px;
+							background:url("../images/3body_icon.png") -284px -44px no-repeat;
+						}
+						&:last-child{
+							float:right;
+							margin-top:10px;
+							display:inline-block;
+							width:11px;
+							height:11px;
+							background:url("../images/3body_icon.png") -301px -44px no-repeat;
+						}
+					}
+					input{
+						float:left;
+						margin-left:15px;
+						width:90px;
+						height:100%;
+						background:none;
+						border:none;
+						outline:none;
+					}
+				}
+				dl{
+					dt{
+						padding:10px 0;
+						overflow: hidden;
+						>div{
+							float:left;
+							margin-left:5px;
+							display:inline-block;
+							width:20px;
+							height:20px;
+							border-radius:100%;
+							background-color:#edf2f8;
+							i{
+								display:inline-block;
+								margin:5px;
+								width:11px;
+								height:10px;
+								background:url("../images/3body_icon.png") -315px -42px no-repeat;
+							}
+						}
+						span{
+							float:left;
+							margin-left:10px;
+							color:#4c5363;
+							font:14px/20px myFirstFont, $publicFont;
+						}
+					}
+					dd{
+						padding:10px 0;
+						overflow: hidden;
+						>div{
+							float:left;
+							margin-left:5px;
+							display:inline-block;
+							width:20px;
+							height:20px;
+							border-radius:100%;
+							font-size:0;
+							text-align:center;
+							i{
+								display:inline-block;
+								background:url("../images/3body_icon.png") no-repeat;
+							}
+						}
+						.live{background-color:#9dc75b;}
+						.clean{background-color:#00a8ec;}
+						.dirty-icon{
+							background-color:#959ea7;
+							i{
+								margin:2px 0 0 0;
+								width:12px;
+								height:16px;
+								background-position:-331px -43px;
+							}
+						}
+						.stop-icon{
+							background-color:#fd621f;
+							i{
+								margin:2px 0 0 0;
+								width:15px;
+								height:16px;
+								background-position:-347px -43px;
+							}
+						}
+						.cleaning-icon{
+							background-color:#62b3b6;
+							i{
+								margin:4px 0 0 0;
+								width:12px;
+								height:12px;
+								background-position:-366px -43px;
+							}
+						}
+						.arrear-icon{
+							background-color:#d63c6e;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.inspect-icon{
+							background-color:#ffa308;
+							i{
+								width:20px;
+								height:20px;
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.hour-icon{
+							background-color:#b65ece;
+							i{
+								margin:2px 0 0 0;
+								width:14px;
+								height:15px;
+								background-position:-397px -43px;
+							}
+						}
+						.room-icon{
+							background-color:#98aed3;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.secrecy-icon{
+							background-color:#9ea7b1;
+							i{
+								margin:3px 0 0 0;
+								width:12px;
+								height:13px;
+								background-position:-382px -43px;
+							}
+						}
+						.vip-icon{
+							background-color:#e2c500;
+							i{
+								font-style:inherit;
+								color:#fff;
+								font:12px/20px myFirstFont, $publicFont;
+								text-align:center;
+								background:none;
+							}
+						}
+						.leave-icon{
+							background-color:#fde01f;
+							i{
+								margin:5px 0 0 0;
+								width:14px;
+								height:9px;
+								background-position:-415px -43px;
+							}
+						}
+						span{
+							float:left;
+							margin-left:10px;
+							width:45px;
+							display:inline-block;
+							color:#4c5363;
+							font:14px/20px myFirstFont, $publicFont;
+							&:nth-child(3){
+								width:auto;
+							}
+						}
+						.btn{
+							margin-top:6px;
+							position:relative;
+							float:right;
+							width:18px;
+							height:8px;
+							background-color:#c4c8d9;
+							border-radius:30px;
+							font-size:0;
+							cursor:pointer;
+							&:before{
+								content:"";
+								position: absolute;
+								top:0;
+								left:0;
+								width:6px;
+								height:6px;
+								border-radius:100%;
+								background-color:#fff;
+								border:1px solid #b8e2f3;
+								@include transition(all .5s);
+							}
+						}
+						.btn.on{
+							background-color:#00a8ec;
+							&:before{
+								content:"";
+								position: absolute;
+								top:0;
+								left:10px;
+								width:6px;
+								height:6px;
+								border-radius:100%;
+								background-color:#fff;
+								border:1px solid #b8e2f3;
+								@include transition(all .5s);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
