@@ -29,28 +29,20 @@
 					<div class="title"><i></i><span>请选择班次</span></div>
 					<ul>
 						<li>
-							<a href="">
-								<i>A</i>
-								<p>早班</p>
-							</a>	
+							<i>A</i>
+							<p>早班</p>	
+						</li>
+						<li class="active">
+							<i>B</i>
+							<p>中班</p>
 						</li>
 						<li>
-							<a href="">
-								<i>B</i>
-								<p>中班</p>
-							</a>
+							<i>C</i>
+							<p>晚班_夜审前</p>
 						</li>
 						<li>
-							<a href="">
-								<i>C</i>
-								<p>晚班_夜审前</p>
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<i>D</i>
-								<p>晚班_夜审后</p>
-							</a>
+							<i>D</i>
+							<p>晚班_夜审后</p>
 						</li>
 					</ul>
 				</div>
@@ -84,7 +76,12 @@
 		var headerHeight=$(".header-3body").height();
 		var bodyHeight=$(".login-content-3body-text").height();
 		var footerTop=(windowHeight-headerHeight-70-bodyHeight)/2;
-		$(".login-content-3body").css("marginTop",footerTop)
+		$(".login-content-3body").css("marginTop",footerTop);
+
+		$(".lc3t-left ul li").on("click",function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+
 		//运行时间
 		getMyTime();
 		//天气预报

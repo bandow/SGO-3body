@@ -330,7 +330,19 @@
 					<div class="click-text">
 						<label><i></i><input type="text" placeholder="查找房号"><i></i></label>
 						<dl>
-							<dt class="arrow-bottom"><div class="select"><i></i></div><span>房型筛选</span></dt>
+							<dt class="arrow-bottom">
+								<div class="select"><i></i></div>
+								<!-- <span>房型筛选</span> -->
+								<div class="label">
+									<select>
+										<option value="">房型筛选</option>
+	                    				<option value="2">雅致大床房</option>
+	                    				<option value="5">行政套房</option>
+	                    				<option value="8">高级标准房</option>
+	                    				<option value="9">高级大床房</option>
+									</select>
+								</div>
+							</dt>
 							<dd data-key="live"><div class="live"></div><span>在住</span><span>12</span><div class="btn on"></div></dd>
 							<dd data-key="clean"><div class="clean"></div><span>干净</span><span>10</span><div class="btn on"></div></dd>
 							<dd data-key="dirty"><div class="dirty-icon"><i></i></div><span>脏房</span><span>4</span><div class="btn on"></div></dd>
@@ -359,6 +371,25 @@
 <script src="plugins/echarts/echarts.min.js"></script>
 <script>
 	$(document).ready(function(){
+
+		$(".room-state-content .left dl dd").on("click",function(){
+			$(this).addClass("on").siblings().removeClass("on");
+		});
+
+		var flag=true;
+		$(".room-state-content .right .right-r .click").on("click",function(){
+			if(flag){
+				$(".room-state-content .right .right-r").css("right","-185px");
+				$(".room-state-content .right .right-m").css("marginRight","21px");
+				flag=false;
+			}else{
+				$(".room-state-content .right .right-r").css("right","10px");
+				$(".room-state-content .right .right-m").css("marginRight","206px");
+				flag=true;
+			}
+			$(this).toggleClass("active");
+		});
+
 		$(".room-state-content .right .right-l dl dd").on("click",function(){
 			$(this).addClass("on").siblings().removeClass("on");
 			var dataIndex=$(this).attr("data-index");
