@@ -62,7 +62,7 @@ body, #wrapper, html {
 .header {
   width: 100%;
   height: auto;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
 .header .head {
   width: 100%;
   height: 62px;
@@ -305,7 +305,7 @@ body, #wrapper, html {
   width: 100%;
   height: auto; }
 .footer p {
-  font: 12px/48px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  font: 12px/36px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   color: #747474;
   text-align: center; }
 

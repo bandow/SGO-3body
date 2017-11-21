@@ -83,12 +83,12 @@ body, #wrapper, html {
   background-color: #fff;
   overflow: hidden; }
 .room-state-content .left {
-  float: left;
+  position: fixed;
+  top: 5px;
+  z-index: 9;
   background-color: #e2eaf3;
   width: 166px;
-  min-height: 100%;
-  margin-bottom: -1000px;
-  padding-bottom: 1100px; }
+  min-height: 100%; }
 .room-state-content .left dl dt {
   padding: 15px 10px;
   overflow: hidden; }
@@ -138,7 +138,7 @@ body, #wrapper, html {
   background-color: #fff; }
 .room-state-content .left .proportion {
   padding: 15px 10px;
-  margin-top: 80px;
+  margin-top: 0px;
   border-top: 1px solid #fff; }
 .room-state-content .left .proportion p.tltie {
   font: 14px/1.2 myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
@@ -213,43 +213,48 @@ body, #wrapper, html {
   float: right;
   font: 14px/30px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   color: #00a8ec; }
-.room-state-content .right {
-  position: relative;
-  padding: 20px 0 1100px 20px;
-  margin-left: 166px;
-  margin-bottom: -1000px; }
-.room-state-content .right .right-l {
-  float: left;
+.room-state-content .right-l {
+  position: fixed;
+  left: 196px;
+  top: 5px;
+  z-index: 9;
   width: 22px;
   height: auto;
   background-color: #edf2f8; }
-.room-state-content .right .right-l dl {
+.room-state-content .right-l dl {
   padding-bottom: 100px;
   border: 1px solid #ddd;
   border-radius: 3px; }
-.room-state-content .right .right-l dl dt i {
+.room-state-content .right-l dl dt i {
   margin: 20px 0 30px 4px;
   display: block;
   width: 13px;
   height: 14px;
   background: url("../images/3body_icon.png") -440px -16px no-repeat; }
-.room-state-content .right .right-l dl dd {
+.room-state-content .right-l dl dd {
   margin: 10px 0;
   font: 12px/26px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   color: #58595b;
   text-align: center;
   cursor: pointer; }
-.room-state-content .right .right-l dl dd.on {
+.room-state-content .right-l dl dd.on {
   background-color: #fff; }
+.room-state-content .right {
+  position: relative;
+  padding: 5px 0 20px 20px;
+  margin-left: 166px;
+  height: auto;
+  overflow: hidden; }
 .room-state-content .right .right-m {
-  margin: 0 206px 0 35px; }
+  margin: 0 206px 0 45px; }
 .room-state-content .right .right-m ul li {
   padding: 5px;
   float: left;
   width: 100px;
   height: 100px;
   background-color: #edf2f8;
-  margin: 0 3px 3px 0; }
+  margin: 0 3px 3px 0;
+  cursor: pointer; }
 .room-state-content .right .right-m ul li .name h5 {
   height: 24px;
   color: #fff;
@@ -355,6 +360,11 @@ body, #wrapper, html {
 .room-state-content .right .right-m ul li .sdk em {
   float: right;
   font-size: 18px; }
+.room-state-content .right .right-m ul li.select {
+  color: #000;
+  opacity: 0.5;
+  transform: rotate(7deg);
+  transition: 0.5s; }
 .room-state-content .right .right-m ul li.live {
   background-color: #9dc75b; }
 .room-state-content .right .right-m ul li.clean {
@@ -365,12 +375,13 @@ body, #wrapper, html {
   background-color: #62b3b6; }
 .room-state-content .right .right-m ul li.dirty {
   background-color: #959ea7; }
-.room-state-content .right .right-r {
-  position: absolute;
-  top: 20px;
-  right: 10px;
+.room-state-content .right-r {
+  position: fixed;
+  top: 5px;
+  right: 25px;
+  z-index: 9;
   width: 196px; }
-.room-state-content .right .right-r .click {
+.room-state-content .right-r .click {
   position: absolute;
   top: 50%;
   left: 0;
@@ -379,7 +390,7 @@ body, #wrapper, html {
   height: 40px;
   background-color: #e1e9f2;
   cursor: pointer; }
-.room-state-content .right .right-r .click:after {
+.room-state-content .right-r .click:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -396,9 +407,9 @@ body, #wrapper, html {
   -ms-transform: rotateZ(135deg);
   -webkit-transform: rotateZ(135deg);
   transform: rotateZ(135deg); }
-.room-state-content .right .right-r .click.active {
+.room-state-content .right-r .click.active {
   background-color: #2b3245; }
-.room-state-content .right .right-r .click.active:after {
+.room-state-content .right-r .click.active:after {
   content: '';
   position: absolute;
   top: 50%;
@@ -415,13 +426,13 @@ body, #wrapper, html {
   -ms-transform: rotateZ(-45deg);
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
-.room-state-content .right .right-r .click-text {
+.room-state-content .right-r .click-text {
   padding-left: 15px;
   margin-left: 10px;
   width: 186px;
   height: auto;
   border-left: 1px solid #ddd; }
-.room-state-content .right .right-r .click-text label {
+.room-state-content .right-r .click-text label {
   display: block;
   padding: 0 8px;
   width: 100%;
@@ -430,21 +441,21 @@ body, #wrapper, html {
   background-color: #edf2f8;
   border-radius: 30px;
   overflow: hidden; }
-.room-state-content .right .right-r .click-text label i:first-child {
+.room-state-content .right-r .click-text label i:first-child {
   float: left;
   margin-top: 8px;
   display: inline-block;
   width: 14px;
   height: 14px;
   background: url("../images/3body_icon.png") -284px -44px no-repeat; }
-.room-state-content .right .right-r .click-text label i:last-child {
+.room-state-content .right-r .click-text label i:last-child {
   float: right;
   margin-top: 10px;
   display: inline-block;
   width: 11px;
   height: 11px;
   background: url("../images/3body_icon.png") -301px -44px no-repeat; }
-.room-state-content .right .right-r .click-text label input {
+.room-state-content .right-r .click-text label input {
   float: left;
   margin-left: 15px;
   width: 90px;
@@ -452,10 +463,10 @@ body, #wrapper, html {
   background: none;
   border: none;
   outline: none; }
-.room-state-content .right .right-r .click-text dl dt {
+.room-state-content .right-r .click-text dl dt {
   padding: 10px 0;
   overflow: hidden; }
-.room-state-content .right .right-r .click-text dl dt > div {
+.room-state-content .right-r .click-text dl dt > div {
   float: left;
   margin-left: 5px;
   display: inline-block;
@@ -463,13 +474,13 @@ body, #wrapper, html {
   height: 20px;
   border-radius: 100%;
   background-color: #edf2f8; }
-.room-state-content .right .right-r .click-text dl dt > div i {
+.room-state-content .right-r .click-text dl dt > div i {
   display: inline-block;
   margin: 5px;
   width: 11px;
   height: 10px;
   background: url("../images/3body_icon.png") -315px -42px no-repeat; }
-.room-state-content .right .right-r .click-text dl dt .label {
+.room-state-content .right-r .click-text dl dt .label {
   float: left;
   margin-left: 10px;
   color: #4c5363;
@@ -477,7 +488,7 @@ body, #wrapper, html {
   background: transparent;
   width: 130px;
   cursor: pointer; }
-.room-state-content .right .right-r .click-text dl dt .label select {
+.room-state-content .right-r .click-text dl dt .label select {
   background: none;
   border: none;
   outline: none;
@@ -487,10 +498,10 @@ body, #wrapper, html {
   width: 100%;
   height: 100%;
   cursor: pointer; }
-.room-state-content .right .right-r .click-text dl dd {
-  padding: 10px 0;
+.room-state-content .right-r .click-text dl dd {
+  padding: 7px 0;
   overflow: hidden; }
-.room-state-content .right .right-r .click-text dl dd > div {
+.room-state-content .right-r .click-text dl dd > div {
   float: left;
   margin-left: 5px;
   display: inline-block;
@@ -499,45 +510,45 @@ body, #wrapper, html {
   border-radius: 100%;
   font-size: 0;
   text-align: center; }
-.room-state-content .right .right-r .click-text dl dd > div i {
+.room-state-content .right-r .click-text dl dd > div i {
   display: inline-block;
   background: url("../images/3body_icon.png") no-repeat; }
-.room-state-content .right .right-r .click-text dl dd .live {
+.room-state-content .right-r .click-text dl dd .live {
   background-color: #9dc75b; }
-.room-state-content .right .right-r .click-text dl dd .clean {
+.room-state-content .right-r .click-text dl dd .clean {
   background-color: #00a8ec; }
-.room-state-content .right .right-r .click-text dl dd .dirty-icon {
+.room-state-content .right-r .click-text dl dd .dirty-icon {
   background-color: #959ea7; }
-.room-state-content .right .right-r .click-text dl dd .dirty-icon i {
+.room-state-content .right-r .click-text dl dd .dirty-icon i {
   margin: 2px 0 0 0;
   width: 12px;
   height: 16px;
   background-position: -331px -43px; }
-.room-state-content .right .right-r .click-text dl dd .stop-icon {
+.room-state-content .right-r .click-text dl dd .stop-icon {
   background-color: #fd621f; }
-.room-state-content .right .right-r .click-text dl dd .stop-icon i {
+.room-state-content .right-r .click-text dl dd .stop-icon i {
   margin: 2px 0 0 0;
   width: 15px;
   height: 16px;
   background-position: -347px -43px; }
-.room-state-content .right .right-r .click-text dl dd .cleaning-icon {
+.room-state-content .right-r .click-text dl dd .cleaning-icon {
   background-color: #62b3b6; }
-.room-state-content .right .right-r .click-text dl dd .cleaning-icon i {
+.room-state-content .right-r .click-text dl dd .cleaning-icon i {
   margin: 4px 0 0 0;
   width: 12px;
   height: 12px;
   background-position: -366px -43px; }
-.room-state-content .right .right-r .click-text dl dd .arrear-icon {
+.room-state-content .right-r .click-text dl dd .arrear-icon {
   background-color: #d63c6e; }
-.room-state-content .right .right-r .click-text dl dd .arrear-icon i {
+.room-state-content .right-r .click-text dl dd .arrear-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
   background: none; }
-.room-state-content .right .right-r .click-text dl dd .inspect-icon {
+.room-state-content .right-r .click-text dl dd .inspect-icon {
   background-color: #ffa308; }
-.room-state-content .right .right-r .click-text dl dd .inspect-icon i {
+.room-state-content .right-r .click-text dl dd .inspect-icon i {
   width: 20px;
   height: 20px;
   font-style: inherit;
@@ -545,53 +556,53 @@ body, #wrapper, html {
   font: 12px/20px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
   background: none; }
-.room-state-content .right .right-r .click-text dl dd .hour-icon {
+.room-state-content .right-r .click-text dl dd .hour-icon {
   background-color: #b65ece; }
-.room-state-content .right .right-r .click-text dl dd .hour-icon i {
+.room-state-content .right-r .click-text dl dd .hour-icon i {
   margin: 2px 0 0 0;
   width: 14px;
   height: 15px;
   background-position: -397px -43px; }
-.room-state-content .right .right-r .click-text dl dd .room-icon {
+.room-state-content .right-r .click-text dl dd .room-icon {
   background-color: #98aed3; }
-.room-state-content .right .right-r .click-text dl dd .room-icon i {
+.room-state-content .right-r .click-text dl dd .room-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
   background: none; }
-.room-state-content .right .right-r .click-text dl dd .secrecy-icon {
+.room-state-content .right-r .click-text dl dd .secrecy-icon {
   background-color: #9ea7b1; }
-.room-state-content .right .right-r .click-text dl dd .secrecy-icon i {
+.room-state-content .right-r .click-text dl dd .secrecy-icon i {
   margin: 3px 0 0 0;
   width: 12px;
   height: 13px;
   background-position: -382px -43px; }
-.room-state-content .right .right-r .click-text dl dd .vip-icon {
+.room-state-content .right-r .click-text dl dd .vip-icon {
   background-color: #e2c500; }
-.room-state-content .right .right-r .click-text dl dd .vip-icon i {
+.room-state-content .right-r .click-text dl dd .vip-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
   background: none; }
-.room-state-content .right .right-r .click-text dl dd .leave-icon {
+.room-state-content .right-r .click-text dl dd .leave-icon {
   background-color: #fde01f; }
-.room-state-content .right .right-r .click-text dl dd .leave-icon i {
+.room-state-content .right-r .click-text dl dd .leave-icon i {
   margin: 5px 0 0 0;
   width: 14px;
   height: 9px;
   background-position: -415px -43px; }
-.room-state-content .right .right-r .click-text dl dd span {
+.room-state-content .right-r .click-text dl dd span {
   float: left;
   margin-left: 10px;
   width: 45px;
   display: inline-block;
   color: #4c5363;
   font: 14px/20px myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
-.room-state-content .right .right-r .click-text dl dd span:nth-child(3) {
+.room-state-content .right-r .click-text dl dd span:nth-child(3) {
   width: auto; }
-.room-state-content .right .right-r .click-text dl dd .btn {
+.room-state-content .right-r .click-text dl dd .btn {
   margin-top: 6px;
   position: relative;
   float: right;
@@ -601,7 +612,7 @@ body, #wrapper, html {
   border-radius: 30px;
   font-size: 0;
   cursor: pointer; }
-.room-state-content .right .right-r .click-text dl dd .btn:before {
+.room-state-content .right-r .click-text dl dd .btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -616,9 +627,9 @@ body, #wrapper, html {
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
-.room-state-content .right .right-r .click-text dl dd .btn.on {
+.room-state-content .right-r .click-text dl dd .btn.on {
   background-color: #00a8ec; }
-.room-state-content .right .right-r .click-text dl dd .btn.on:before {
+.room-state-content .right-r .click-text dl dd .btn.on:before {
   content: "";
   position: absolute;
   top: 0;
