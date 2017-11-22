@@ -1,8 +1,8 @@
 @import 'public/base';
-@font-face{
-	font-family: myFirstFont;
-	src: url('../font/hiragino.otf')
-}
+// @font-face{
+// 	font-family: myFirstFont;
+// 	src: url('../font/hiragino.otf')
+// }
 body, #wrapper, html {
     height: 100%;
 }
@@ -72,13 +72,13 @@ body, #wrapper, html {
 						border:1px solid;
 						color:#c4c8d9;
 						border-radius:5px;
-						font:14px/28px myFirstFont, $publicFont;
+						font:14px/28px $publicFont;
 						text-align:center;
 					}
 					span{
 						margin-left:5px;
 						color:#c4c8d9;
-						font:14px/28px myFirstFont, $publicFont;
+						font:14px/28px $publicFont;
 					}
 				}
 			}
@@ -100,7 +100,7 @@ body, #wrapper, html {
 				span{
 					float:left;
 					margin-left:5px;
-					font:14px/48px myFirstFont, $publicFont;
+					font:14px/48px $publicFont;
 					color:#b1b5c6;
 				}
 			}
@@ -186,7 +186,7 @@ body, #wrapper, html {
 					span{
 						float:left;
 						margin-left:5px;
-						font:14px/40px myFirstFont, $publicFont;
+						font:14px/40px $publicFont;
 						color:#323a4d;
 					}
 				}
@@ -259,7 +259,7 @@ body, #wrapper, html {
 			a{
 				float:left;
 				margin-left:10px;
-				font:14px/28px myFirstFont, $publicFont;
+				font:14px/28px $publicFont;
 				color:#c4c8d9;
 			}
 		}
@@ -280,14 +280,14 @@ body, #wrapper, html {
 				span{
 					float:left;
 					margin-left:5px;
-					font:14px/28px myFirstFont, $publicFont;
+					font:14px/28px $publicFont;
 					color:#c4c8d9;
 				}
 			}
 			>a{
 				float:left;
 				margin-left:20px;
-				font:14px/28px myFirstFont, $publicFont;
+				font:14px/28px $publicFont;
 				color:#00a8ec;
 			}
 		}
@@ -320,7 +320,7 @@ body, #wrapper, html {
 	width:100%;
 	height:auto;
 	p{
-    	font:12px/36px myFirstFont, $publicFont;
+    	font:12px/36px $publicFont;
 		color:#747474;
 		text-align:center;
     }
