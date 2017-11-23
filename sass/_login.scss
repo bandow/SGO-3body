@@ -1,8 +1,8 @@
 @import 'public/base';
-@font-face{
-	font-family: myFirstFont;
-	src: url('../font/hiragino.otf')
-}
+// @font-face{
+// 	font-family: myFirstFont;
+// 	src: url('../font/hiragino.otf')
+// }
 body.login-3body{
 	height: auto;
     background:url(../images/login_bg.jpg) no-repeat center fixed;
@@ -43,7 +43,7 @@ body.login-3body{
 			span{
 				float:left;
 				margin-left:15px;
-				font:18px/48px myFirstFont, $publicFont;
+				font:18px/48px $publicFont;
 				color:#fff;
 			}
 		}
@@ -108,7 +108,7 @@ body.login-3body{
 				}
 				span{
 					margin-left:10px;
-					font:18px/48px myFirstFont, $publicFont;
+					font:18px/48px $publicFont;
 					color:#fff;
 				}
 			}
@@ -132,7 +132,7 @@ body.login-3body{
 						border-radius:100%;
 						display:inline-block;
 						text-align:center;
-						font:24px/36px myFirstFont, $publicFont;
+						font:24px/36px $publicFont;
 						color:#fff;
 						@include transition(all .5s);
 					}
@@ -141,7 +141,7 @@ body.login-3body{
 					    display:block;
 					    text-align:center;
 					    float:left;
-						font:14px/38px myFirstFont, $publicFont;
+						font:14px/38px $publicFont;
 						color:#383f52;
 					}
 				}
@@ -169,7 +169,7 @@ body.login-3body{
 			background:rgba(255,255,225,.1);
 			h2{
 				padding:30px 0;
-				font:30px/48px myFirstFont, $publicFont;
+				font:30px/48px $publicFont;
 				color:#fff;
 				text-align:center;
 				span{
@@ -203,7 +203,7 @@ body.login-3body{
 						outline:none;
 						width:100%;
 						height:100%;
-						font:14px/2 myFirstFont, $publicFont;
+						font:14px/2 $publicFont;
 						color:#fff;
 						&::-webkit-input-placeholder{
 							color:#fff;
@@ -247,7 +247,7 @@ body.login-3body{
 				box-shadow:1px 3px 10px #1e5b7a;
 				a{
 					display:block;
-					font:18px/40px myFirstFont, $publicFont;
+					font:18px/40px $publicFont;
 					color:#fff;
 					text-align:center;
 					text-decoration:none;
@@ -266,7 +266,7 @@ body.login-3body{
 			float:left;
 			display:inline-block;
 			background: no-repeat top left; 
-			font:30px/1 myFirstFont, $publicFont;
+			font:30px/1 $publicFont;
 			height:30px; 
 			line-height:30px; 
 			padding-left:36px; 
@@ -282,7 +282,7 @@ body.login-3body{
 		p { 
 			float:left;
 			display:inline-block;
-			font:16px/30px myFirstFont, $publicFont;
+			font:16px/30px $publicFont;
 		}
 		p span { 
 			margin:0 10px; 
@@ -317,7 +317,7 @@ body.login-3body{
 				float:left;
 				margin-left:10px;
 				display:inline-block;
-				font:18px/48px myFirstFont, $publicFont;
+				font:18px/48px $publicFont;
 				color:#fff;	
 			}
 		}
@@ -338,10 +338,10 @@ body.login-3body{
 				background:none;
 				border:none;
 				outline:none;
-				font:14px/1 myFirstFont, $publicFont;
+				font:14px/1 $publicFont;
 				color:#fff;
 				&::-webkit-input-placeholder{
-					font:14px/1 myFirstFont, $publicFont;
+					font:14px/1 $publicFont;
 					color:#fff;
 				}
 			}
@@ -412,7 +412,7 @@ body.login-3body{
 					}
 					p{
 						margin-left:4px;
-						font:14px/40px pxmyFirstFont, $publicFont;
+						font:14px/40px $publicFont;
 						color:#fff;
 					}
 				}
@@ -434,7 +434,7 @@ body.login-3body{
 			box-shadow:1px 3px 10px #1e5b7a;
 			a{
 				display:block;
-				font:18px/40px myFirstFont, $publicFont;
+				font:18px/40px $publicFont;
 				color:#fff;
 				text-align:center;
 				text-decoration:none;

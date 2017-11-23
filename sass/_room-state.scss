@@ -1,8 +1,8 @@
 @import 'public/base';
-@font-face{
-	font-family: myFirstFont;
-	src: url('../font/hiragino.otf')
-}
+// @font-face{
+// 	font-family: myFirstFont;
+// 	src: url('../font/hiragino.otf')
+// }
 body, #wrapper, html {
     height: 100%;
 }
@@ -68,7 +68,7 @@ body, #wrapper, html {
 				span{
 					float:left;
 					margin-left:10px;
-					font:bold 24px/1.2 myFirstFont, $publicFont;
+					font:bold 24px/1.2 $publicFont;
 					color:#2c3346;
 				}
 			}
@@ -90,7 +90,7 @@ body, #wrapper, html {
 				p{
 					padding:10px 10px 10px 0;
 					margin-left:24px;
-					font:14px/1.2 myFirstFont, $publicFont;
+					font:14px/1.2 $publicFont;
 					color:#575e6d;
 					border-bottom: 1px solid #fdfdfd;
 				}
@@ -104,7 +104,7 @@ body, #wrapper, html {
 			margin-top:0px;
 			border-top: 1px solid #fff;
 			p.tltie{
-				font:14px/1.2 myFirstFont, $publicFont;
+				font:14px/1.2 $publicFont;
 				color:#575e6d;
 			}
 			.num{
@@ -121,12 +121,12 @@ body, #wrapper, html {
 				}
 				span{
 					margin-left:5px;
-					font:14px/30px myFirstFont, $publicFont;
+					font:14px/30px $publicFont;
 					color:#575e6d;
 				}
 				em{
 				    float:right;
-					font:14px/30px myFirstFont, $publicFont;
+					font:14px/30px $publicFont;
 					color:#00a8ec;
 				}
 			}
@@ -192,12 +192,12 @@ body, #wrapper, html {
 				}
 				span{
 					margin-left:5px;
-					font:14px/30px myFirstFont, $publicFont;
+					font:14px/30px $publicFont;
 					color:#575e6d;
 				}
 				em{
 				    float:right;
-					font:14px/30px myFirstFont, $publicFont;
+					font:14px/30px $publicFont;
 					color:#00a8ec;
 				}
 			}
@@ -226,7 +226,7 @@ body, #wrapper, html {
 			}
 			dd{
 				margin:10px 0;
-				font:12px/26px myFirstFont, $publicFont;
+				font:12px/26px $publicFont;
 				color:#58595b;
 				text-align:center;
 				cursor: pointer;
@@ -258,7 +258,7 @@ body, #wrapper, html {
 						h5{
 							height:24px;
 							color:#fff;
-							font:14px/24px myFirstFont, $publicFont;
+							font:14px/24px $publicFont;
 						}
 					}
 					.icon{
@@ -281,7 +281,7 @@ body, #wrapper, html {
 							i{
 								font-style:inherit;
 								color:#fff;
-								font:12px/20px myFirstFont, $publicFont;
+								font:12px/20px $publicFont;
 								text-align:center;
 								background:none;
 							}
@@ -318,7 +318,7 @@ body, #wrapper, html {
 							i{
 								font-style:inherit;
 								color:#fff;
-								font:12px/20px myFirstFont, $publicFont;
+								font:12px/20px $publicFont;
 								text-align:center;
 								background:none;
 							}
@@ -328,7 +328,7 @@ body, #wrapper, html {
 							i{
 								font-style:inherit;
 								color:#fff;
-								font:12px/20px myFirstFont, $publicFont;
+								font:12px/20px $publicFont;
 								text-align:center;
 								background:none;
 							}
@@ -356,7 +356,7 @@ body, #wrapper, html {
 							i{
 								font-style:inherit;
 								color:#fff;
-								font:12px/20px myFirstFont, $publicFont;
+								font:12px/20px $publicFont;
 								text-align:center;
 								background:none;
 							}
@@ -374,13 +374,13 @@ body, #wrapper, html {
 					.number{
 						height:24px;
 						color:#fff;
-						font:14px/24px myFirstFont, $publicFont;
+						font:14px/24px $publicFont;
 						text-align:right;
 					}
 					.sdk{
 						overflow:hidden;
 						color:#fff;
-						font:14px/1.2 myFirstFont, $publicFont;
+						font:14px/1.2 $publicFont;
 						span{
 							margin-top:3px;
 							float:left;
@@ -522,7 +522,7 @@ body, #wrapper, html {
 						float:left;
 						margin-left:10px;
 						color:#4c5363;
-						font:14px/20px myFirstFont, $publicFont;
+						font:14px/20px $publicFont;
 					    background: transparent;
 					    width:130px;
 					    cursor:pointer;
@@ -590,7 +590,7 @@ body, #wrapper, html {
 						i{
 							font-style:inherit;
 							color:#fff;
-							font:12px/20px myFirstFont, $publicFont;
+							font:12px/20px $publicFont;
 							text-align:center;
 							background:none;
 						}
@@ -602,7 +602,7 @@ body, #wrapper, html {
 							height:20px;
 							font-style:inherit;
 							color:#fff;
-							font:12px/20px myFirstFont, $publicFont;
+							font:12px/20px $publicFont;
 							text-align:center;
 							background:none;
 						}
@@ -621,7 +621,7 @@ body, #wrapper, html {
 						i{
 							font-style:inherit;
 							color:#fff;
-							font:12px/20px myFirstFont, $publicFont;
+							font:12px/20px $publicFont;
 							text-align:center;
 							background:none;
 						}
@@ -640,7 +640,7 @@ body, #wrapper, html {
 						i{
 							font-style:inherit;
 							color:#fff;
-							font:12px/20px myFirstFont, $publicFont;
+							font:12px/20px $publicFont;
 							text-align:center;
 							background:none;
 						}
@@ -660,7 +660,7 @@ body, #wrapper, html {
 						width:45px;
 						display:inline-block;
 						color:#4c5363;
-						font:14px/20px myFirstFont, $publicFont;
+						font:14px/20px $publicFont;
 						&:nth-child(3){
 							width:auto;
 						}
