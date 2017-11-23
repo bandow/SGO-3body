@@ -90,7 +90,7 @@ body, #wrapper, html {
   width: 166px;
   min-height: 100%; }
 .room-state-content .left dl dt {
-  padding: 15px 10px;
+  padding: 10px 10px;
   overflow: hidden; }
 .room-state-content .left dl dt i:first-child {
   float: left;
@@ -129,7 +129,7 @@ body, #wrapper, html {
 .room-state-content .left dl dd i.i3 {
   background-position: -267px -44px; }
 .room-state-content .left dl dd p {
-  padding: 15px 10px 15px 0;
+  padding: 10px 10px 10px 0;
   margin-left: 24px;
   font: 14px/1.2 myFirstFont, Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   color: #575e6d;
@@ -380,11 +380,13 @@ body, #wrapper, html {
   top: 5px;
   right: 25px;
   z-index: 9;
-  width: 196px; }
+  width: 196px;
+  border-left: 1px solid #ddd;
+  min-height: 100%; }
 .room-state-content .right-r .click {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -10px;
   margin-top: -5px;
   width: 10px;
   height: 40px;
@@ -427,11 +429,9 @@ body, #wrapper, html {
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg); }
 .room-state-content .right-r .click-text {
-  padding-left: 15px;
   margin-left: 10px;
   width: 186px;
-  height: auto;
-  border-left: 1px solid #ddd; }
+  height: auto; }
 .room-state-content .right-r .click-text label {
   display: block;
   padding: 0 8px;
@@ -499,7 +499,7 @@ body, #wrapper, html {
   height: 100%;
   cursor: pointer; }
 .room-state-content .right-r .click-text dl dd {
-  padding: 7px 0;
+  padding: 6px 0;
   overflow: hidden; }
 .room-state-content .right-r .click-text dl dd > div {
   float: left;
@@ -606,8 +606,8 @@ body, #wrapper, html {
   margin-top: 6px;
   position: relative;
   float: right;
-  width: 18px;
-  height: 8px;
+  width: 25px;
+  height: 12px;
   background-color: #c4c8d9;
   border-radius: 30px;
   font-size: 0;
@@ -617,8 +617,8 @@ body, #wrapper, html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   background-color: #fff;
   border: 1px solid #b8e2f3;
@@ -633,9 +633,9 @@ body, #wrapper, html {
   content: "";
   position: absolute;
   top: 0;
-  left: 10px;
-  width: 6px;
-  height: 6px;
+  left: 13px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
   background-color: #fff;
   border: 1px solid #b8e2f3;

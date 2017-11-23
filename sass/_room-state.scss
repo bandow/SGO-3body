@@ -45,7 +45,7 @@ body, #wrapper, html {
 		// padding-bottom:1100px;
 		dl{
 			dt{
-				padding:15px 10px;
+				padding:10px 10px;
 				overflow: hidden;
 				i{
 					&:first-child{
@@ -88,7 +88,7 @@ body, #wrapper, html {
 				i.i2{background-position:-251px -44px;}
 				i.i3{background-position:-267px -44px;}
 				p{
-					padding:15px 10px 15px 0;
+					padding:10px 10px 10px 0;
 					margin-left:24px;
 					font:14px/1.2 myFirstFont, $publicFont;
 					color:#575e6d;
@@ -411,10 +411,12 @@ body, #wrapper, html {
 	    right:25px;
 	    z-index:9;
 		width:196px;
+		border-left: 1px solid #ddd;
+		min-height:100%;
 		.click{
 			position:absolute;
 			top:50%;
-			left:0;
+			left:-10px;
 			margin-top:-5px;
 			width:10px;
 			height:40px;
@@ -453,11 +455,12 @@ body, #wrapper, html {
 			}
 		}
 		.click-text{
-			padding-left:15px;
+			// padding-left:15px;
 			margin-left:10px;
 			width:186px;
 			height:auto;
-			border-left:1px solid #ddd;
+			// border-left:1px solid #ddd;
+			
 			label{
 				display:block;
 				padding:0 8px;
@@ -537,7 +540,7 @@ body, #wrapper, html {
 					}
 				}
 				dd{
-					padding:7px 0;
+					padding:6px 0;
 					overflow: hidden;
 					>div{
 						float:left;
@@ -666,8 +669,8 @@ body, #wrapper, html {
 						margin-top:6px;
 						position:relative;
 						float:right;
-						width:18px;
-						height:8px;
+						width:25px;
+						height:12px;
 						background-color:#c4c8d9;
 						border-radius:30px;
 						font-size:0;
@@ -677,8 +680,8 @@ body, #wrapper, html {
 							position: absolute;
 							top:0;
 							left:0;
-							width:6px;
-							height:6px;
+							width:10px;
+							height:10px;
 							border-radius:100%;
 							background-color:#fff;
 							border:1px solid #b8e2f3;
@@ -691,9 +694,9 @@ body, #wrapper, html {
 							content:"";
 							position: absolute;
 							top:0;
-							left:10px;
-							width:6px;
-							height:6px;
+							left:13px;
+							width:10px;
+							height:10px;
 							border-radius:100%;
 							background-color:#fff;
 							border:1px solid #b8e2f3;
