@@ -7,22 +7,9 @@
 * Version:0.0.1
 * ================================================================== */
 html {
-  font-family: "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-}
+  font-family: "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, div, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, div, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -34,24 +21,20 @@ time, div, mark, audio, video {
   /* Firefox */
   -webkit-box-sizing: border-box;
   /* Safari */
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html body {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 ol, ul {
   /*去掉列表点*/
-  list-style: none;
-}
+  list-style: none; }
 
 table {
   /*去掉表格的双行线*/
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /*取消a标签在移动端点击时的背景颜色*/
 a, a:hover, a:active, a:visited, a:link, a:focus {
@@ -59,21 +42,17 @@ a, a:hover, a:active, a:visited, a:link, a:focus {
   -webkit-tap-highlight-color: transparent;
   outline: none;
   background: none;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 body, #wrapper, html {
-  height: 100%;
-}
+  height: 100%; }
 
 .w1278 {
   width: 1278px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .arrow-bottom {
-  position: relative;
-}
+  position: relative; }
 .arrow-bottom:after {
   content: '';
   position: absolute;
@@ -90,186 +69,149 @@ body, #wrapper, html {
   -o-transform: rotateZ(-135deg);
   -ms-transform: rotateZ(-135deg);
   -webkit-transform: rotateZ(-135deg);
-  transform: rotateZ(-135deg);
-}
+  transform: rotateZ(-135deg); }
 
 #wrapper {
   width: 100%;
   padding: 0 13px 0 15px;
-  background-color: #fdfdfd;
-}
+  background-color: #fdfdfd; }
 
 .room-state-content {
   background-color: #fff;
-  overflow: hidden;
-}
+  overflow: hidden; }
 .room-state-content .left {
   position: fixed;
   top: 5px;
   z-index: 9;
   background-color: #e2eaf3;
   width: 166px;
-  min-height: 100%;
-}
+  min-height: 100%; }
 .room-state-content .left dl dt {
   padding: 10px 10px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 .room-state-content .left dl dt i:first-child {
   float: left;
   margin-top: 3px;
   display: block;
   width: 21px;
   height: 22px;
-  background: url("../images/3body_icon.png") -212px -43px no-repeat;
-}
+  background: url("../images/3body_icon.png") -212px -43px no-repeat; }
 .room-state-content .left dl dt i:last-child {
   float: right;
   margin-top: 5px;
   display: block;
   width: 16px;
   height: 17px;
-  background: url("../images/3body_icon.png") -212px -69px no-repeat;
-}
+  background: url("../images/3body_icon.png") -212px -69px no-repeat; }
 .room-state-content .left dl dt span {
   float: left;
   margin-left: 10px;
   font: bold 24px/1.2 "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  color: #2c3346;
-}
+  color: #2c3346; }
 .room-state-content .left dl dd {
   padding-left: 10px;
   overflow: hidden;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .left dl dd i {
   float: left;
-  margin-top: 16px;
+  margin-top: 10px;
   display: block;
   width: 14px;
   height: 14px;
-  background: url("../images/3body_icon.png") no-repeat;
-}
+  background: url("../images/3body_icon.png") no-repeat; }
 .room-state-content .left dl dd i.i1 {
-  background-position: -235px -44px;
-}
+  background-position: -235px -44px; }
 .room-state-content .left dl dd i.i2 {
-  background-position: -251px -44px;
-}
+  background-position: -251px -44px; }
 .room-state-content .left dl dd i.i3 {
-  background-position: -267px -44px;
-}
+  background-position: -267px -44px; }
 .room-state-content .left dl dd p {
   padding: 10px 10px 10px 0;
   margin-left: 24px;
   font: 14px/1.2 "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   color: #575e6d;
-  border-bottom: 1px solid #fdfdfd;
-}
+  border-bottom: 1px solid #fdfdfd; }
 .room-state-content .left dl dd.on {
-  background-color: #fff;
-}
+  background-color: #fff; }
 .room-state-content .left .proportion {
-  padding: 15px 10px;
+  padding: 5px 10px;
   margin-top: 0px;
-  border-top: 1px solid #fff;
-}
+  border-top: 1px solid #fff; }
 .room-state-content .left .proportion p.tltie {
   font: 14px/1.2 "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  color: #575e6d;
-}
+  color: #575e6d; }
 .room-state-content .left .proportion .num {
   padding: 0 10px;
   background-color: #edf2f8;
-  border-radius: 30px;
-}
+  border-radius: 30px; }
 .room-state-content .left .proportion .num i {
   float: left;
   margin-top: 10px;
   display: block;
   width: 11px;
   height: 10px;
-  background: url("../images/3body_icon.png") -260px -76px no-repeat;
-}
+  background: url("../images/3body_icon.png") -260px -76px no-repeat; }
 .room-state-content .left .proportion .num span {
   margin-left: 5px;
   font: 14px/30px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  color: #575e6d;
-}
+  color: #575e6d; }
 .room-state-content .left .proportion .num em {
   float: right;
   font: 14px/30px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  color: #00a8ec;
-}
+  color: #00a8ec; }
 .room-state-content .left .proportion .proportion-line {
   margin: 10px 5px;
   height: 8px;
   border-radius: 30px;
-  background-color: #ddd;
-}
+  background-color: #ddd; }
 .room-state-content .left .proportion .proportion-line > div {
   float: left;
-  height: 100%;
-}
+  height: 100%; }
 .room-state-content .left .proportion .proportion-line > div:first-child {
-  border-radius: 30px 0 0 30px;
-}
+  border-radius: 30px 0 0 30px; }
 .room-state-content .left .proportion .proportion-line > div:last-child {
-  border-radius: 0 30px 30px 0;
-}
+  border-radius: 0 30px 30px 0; }
 .room-state-content .left .proportion .proportion-line .c1 {
-  background-color: #a9d15b;
-}
+  background-color: #a9d15b; }
 .room-state-content .left .proportion .proportion-line .c2 {
-  background-color: #fd621f;
-}
+  background-color: #fd621f; }
 .room-state-content .left .proportion .proportion-line .c3 {
-  background-color: #fde01f;
-}
+  background-color: #fde01f; }
 .room-state-content .left .proportion .proportion-line .c4 {
-  background-color: #98aed3;
-}
+  background-color: #98aed3; }
 .room-state-content .left .proportion .proportion-line .c5 {
-  background-color: #4dbeff;
-}
+  background-color: #4dbeff; }
+.room-state-content .left .proportion p {
+  margin-bottom: 3px; }
 .room-state-content .left .proportion p i {
   margin-top: 5px;
   float: left;
   border-radius: 100%;
-  width: 20px;
-  height: 20px;
-}
+  width: 15px;
+  height: 15px; }
 .room-state-content .left .proportion p i.c1 {
-  background-color: #a9d15b;
-}
+  background-color: #a9d15b; }
 .room-state-content .left .proportion p i.c2 {
-  background-color: #fd621f;
-}
+  background-color: #fd621f; }
 .room-state-content .left .proportion p i.c3 {
-  background-color: #fde01f;
-}
+  background-color: #fde01f; }
 .room-state-content .left .proportion p i.c4 {
-  background-color: #98aed3;
-}
+  background-color: #98aed3; }
 .room-state-content .left .proportion p i.c5 {
-  background-color: #4dbeff;
-}
+  background-color: #4dbeff; }
 .room-state-content .left .proportion p i.c6 {
   width: 21px;
   height: 20px;
   background: url("../images/3body_icon.png") -234px -66px no-repeat;
-  border-radius: 0;
-}
+  border-radius: 0; }
 .room-state-content .left .proportion p span {
   margin-left: 5px;
-  font: 14px/30px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  color: #575e6d;
-}
+  font: 14px/21px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #575e6d; }
 .room-state-content .left .proportion p em {
   float: right;
-  font: 14px/30px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  color: #00a8ec;
-}
+  font: 14px/21px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
+  color: #00a8ec; }
 .room-state-content .right-l {
   position: fixed;
   left: 196px;
@@ -277,40 +219,33 @@ body, #wrapper, html {
   z-index: 9;
   width: 22px;
   height: auto;
-  background-color: #edf2f8;
-}
+  background-color: #edf2f8; }
 .room-state-content .right-l dl {
   padding-bottom: 100px;
   border: 1px solid #ddd;
-  border-radius: 3px;
-}
+  border-radius: 3px; }
 .room-state-content .right-l dl dt i {
   margin: 20px 0 30px 4px;
   display: block;
   width: 13px;
   height: 14px;
-  background: url("../images/3body_icon.png") -440px -16px no-repeat;
-}
+  background: url("../images/3body_icon.png") -440px -16px no-repeat; }
 .room-state-content .right-l dl dd {
   margin: 10px 0;
   font: 12px/26px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   color: #58595b;
   text-align: center;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .right-l dl dd.on {
-  background-color: #fff;
-}
+  background-color: #fff; }
 .room-state-content .right {
   position: relative;
   padding: 5px 0 20px 20px;
   margin-left: 166px;
   height: auto;
-  overflow: hidden;
-}
+  overflow: hidden; }
 .room-state-content .right .right-m {
-  margin: 0 206px 0 45px;
-}
+  margin: 0 186px 0 45px; }
 .room-state-content .right .right-m ul li {
   padding: 5px;
   float: left;
@@ -318,171 +253,135 @@ body, #wrapper, html {
   height: 100px;
   background-color: #edf2f8;
   margin: 0 3px 3px 0;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .right .right-m ul li .name h5 {
   height: 24px;
   color: #fff;
-  font: 14px/24px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-}
+  font: 14px/24px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
 .room-state-content .right .right-m ul li .icon {
-  height: 20px;
-}
+  height: 20px; }
 .room-state-content .right .right-m ul li .icon > div {
   float: left;
   margin-left: 5px;
   display: inline-block;
   width: 20px;
   height: 20px;
-  border-radius: 100%;
-}
+  border-radius: 100%; }
 .room-state-content .right .right-m ul li .icon > div i {
   display: block;
-  background: url("../images/3body_icon.png") no-repeat;
-}
+  background: url("../images/3body_icon.png") no-repeat; }
 .room-state-content .right .right-m ul li .icon .vip-icon {
-  background-color: #e2c500;
-}
+  background-color: #e2c500; }
 .room-state-content .right .right-m ul li .icon .vip-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right .right-m ul li .icon .leave-icon {
-  background-color: #fde01f;
-}
+  background-color: #fde01f; }
 .room-state-content .right .right-m ul li .icon .leave-icon i {
   margin: 5px 0 0 3px;
   width: 14px;
   height: 9px;
-  background-position: -415px -43px;
-}
+  background-position: -415px -43px; }
 .room-state-content .right .right-m ul li .icon .stop-icon {
-  background-color: #fd621f;
-}
+  background-color: #fd621f; }
 .room-state-content .right .right-m ul li .icon .stop-icon i {
   margin: 2px 0 0 3px;
   width: 15px;
   height: 16px;
-  background-position: -347px -43px;
-}
+  background-position: -347px -43px; }
 .room-state-content .right .right-m ul li .icon .cleaning-icon {
-  background-color: #62b3b6;
-}
+  background-color: #62b3b6; }
 .room-state-content .right .right-m ul li .icon .cleaning-icon i {
   margin: 5px 0 0 3px;
   width: 12px;
   height: 12px;
-  background-position: -366px -43px;
-}
+  background-position: -366px -43px; }
 .room-state-content .right .right-m ul li .icon .arrear-icon {
-  background-color: #d63c6e;
-}
+  background-color: #d63c6e; }
 .room-state-content .right .right-m ul li .icon .arrear-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right .right-m ul li .icon .inspect-icon {
-  background-color: #ffa308;
-}
+  background-color: #ffa308; }
 .room-state-content .right .right-m ul li .icon .inspect-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right .right-m ul li .icon .dirty-icon {
-  background-color: #959ea7;
-}
+  background-color: #959ea7; }
 .room-state-content .right .right-m ul li .icon .dirty-icon i {
   margin: 2px 0 0 4px;
   width: 12px;
   height: 16px;
-  background-position: -331px -43px;
-}
+  background-position: -331px -43px; }
 .room-state-content .right .right-m ul li .icon .hour-icon {
-  background-color: #b65ece;
-}
+  background-color: #b65ece; }
 .room-state-content .right .right-m ul li .icon .hour-icon i {
   margin: 2px 0 0 3px;
   width: 14px;
   height: 15px;
-  background-position: -397px -43px;
-}
+  background-position: -397px -43px; }
 .room-state-content .right .right-m ul li .icon .room-icon {
-  background-color: #98aed3;
-}
+  background-color: #98aed3; }
 .room-state-content .right .right-m ul li .icon .room-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right .right-m ul li .icon .secrecy-icon {
-  background-color: #9ea7b1;
-}
+  background-color: #9ea7b1; }
 .room-state-content .right .right-m ul li .icon .secrecy-icon i {
   margin: 3px 0 0 4px;
   width: 12px;
   height: 13px;
-  background-position: -382px -43px;
-}
+  background-position: -382px -43px; }
 .room-state-content .right .right-m ul li .number {
   height: 24px;
   color: #fff;
   font: 14px/24px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-  text-align: right;
-}
+  text-align: right; }
 .room-state-content .right .right-m ul li .sdk {
   overflow: hidden;
   color: #fff;
-  font: 14px/1.2 "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-}
+  font: 14px/1.2 "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
 .room-state-content .right .right-m ul li .sdk span {
   margin-top: 3px;
-  float: left;
-}
+  float: left; }
 .room-state-content .right .right-m ul li .sdk em {
   float: right;
-  font-size: 18px;
-}
+  font-size: 18px; }
 .room-state-content .right .right-m ul li.select {
   color: #000;
   opacity: 0.5;
   transform: rotate(7deg);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 .room-state-content .right .right-m ul li.live {
-  background-color: #9dc75b;
-}
+  background-color: #9dc75b; }
 .room-state-content .right .right-m ul li.clean {
-  background-color: #00a8ec;
-}
+  background-color: #00a8ec; }
 .room-state-content .right .right-m ul li.stop {
-  background-color: #fd621f;
-}
+  background-color: #fd621f; }
 .room-state-content .right .right-m ul li.cleaning {
-  background-color: #62b3b6;
-}
+  background-color: #62b3b6; }
 .room-state-content .right .right-m ul li.dirty {
-  background-color: #959ea7;
-}
+  background-color: #959ea7; }
 .room-state-content .right-r {
   position: fixed;
   top: 5px;
   right: 25px;
   z-index: 9;
-  width: 196px;
+  width: 176px;
   border-left: 1px solid #ddd;
-  min-height: 100%;
-}
+  min-height: 100%; }
 .room-state-content .right-r .click {
   position: absolute;
   top: 50%;
@@ -491,8 +390,7 @@ body, #wrapper, html {
   width: 10px;
   height: 40px;
   background-color: #e1e9f2;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .right-r .click:after {
   content: '';
   position: absolute;
@@ -509,11 +407,9 @@ body, #wrapper, html {
   -o-transform: rotateZ(135deg);
   -ms-transform: rotateZ(135deg);
   -webkit-transform: rotateZ(135deg);
-  transform: rotateZ(135deg);
-}
+  transform: rotateZ(135deg); }
 .room-state-content .right-r .click.active {
-  background-color: #2b3245;
-}
+  background-color: #2b3245; }
 .room-state-content .right-r .click.active:after {
   content: '';
   position: absolute;
@@ -530,13 +426,11 @@ body, #wrapper, html {
   -o-transform: rotateZ(-45deg);
   -ms-transform: rotateZ(-45deg);
   -webkit-transform: rotateZ(-45deg);
-  transform: rotateZ(-45deg);
-}
+  transform: rotateZ(-45deg); }
 .room-state-content .right-r .click-text {
   margin-left: 10px;
-  width: 186px;
-  height: auto;
-}
+  width: 166px;
+  height: auto; }
 .room-state-content .right-r .click-text label {
   display: block;
   padding: 0 8px;
@@ -545,24 +439,21 @@ body, #wrapper, html {
   border: 1px solid #ddd;
   background-color: #edf2f8;
   border-radius: 30px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 .room-state-content .right-r .click-text label i:first-child {
   float: left;
   margin-top: 8px;
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url("../images/3body_icon.png") -284px -44px no-repeat;
-}
+  background: url("../images/3body_icon.png") -284px -44px no-repeat; }
 .room-state-content .right-r .click-text label i:last-child {
   float: right;
   margin-top: 10px;
   display: inline-block;
   width: 11px;
   height: 11px;
-  background: url("../images/3body_icon.png") -301px -44px no-repeat;
-}
+  background: url("../images/3body_icon.png") -301px -44px no-repeat; }
 .room-state-content .right-r .click-text label input {
   float: left;
   margin-left: 15px;
@@ -570,12 +461,10 @@ body, #wrapper, html {
   height: 100%;
   background: none;
   border: none;
-  outline: none;
-}
+  outline: none; }
 .room-state-content .right-r .click-text dl dt {
-  padding: 10px 0;
-  overflow: hidden;
-}
+  padding: 5px 0;
+  overflow: hidden; }
 .room-state-content .right-r .click-text dl dt > div {
   float: left;
   margin-left: 5px;
@@ -583,15 +472,13 @@ body, #wrapper, html {
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color: #edf2f8;
-}
+  background-color: #edf2f8; }
 .room-state-content .right-r .click-text dl dt > div i {
   display: inline-block;
   margin: 5px;
   width: 11px;
   height: 10px;
-  background: url("../images/3body_icon.png") -315px -42px no-repeat;
-}
+  background: url("../images/3body_icon.png") -315px -42px no-repeat; }
 .room-state-content .right-r .click-text dl dt .label {
   float: left;
   margin-left: 10px;
@@ -599,8 +486,7 @@ body, #wrapper, html {
   font: 14px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   background: transparent;
   width: 130px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .right-r .click-text dl dt .label select {
   background: none;
   border: none;
@@ -610,12 +496,10 @@ body, #wrapper, html {
   -webkit-appearance: none;
   width: 100%;
   height: 100%;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .right-r .click-text dl dd {
-  padding: 6px 0;
-  overflow: hidden;
-}
+  padding: 5px 0;
+  overflow: hidden; }
 .room-state-content .right-r .click-text dl dd > div {
   float: left;
   margin-left: 5px;
@@ -624,58 +508,45 @@ body, #wrapper, html {
   height: 20px;
   border-radius: 100%;
   font-size: 0;
-  text-align: center;
-}
+  text-align: center; }
 .room-state-content .right-r .click-text dl dd > div i {
   display: inline-block;
-  background: url("../images/3body_icon.png") no-repeat;
-}
+  background: url("../images/3body_icon.png") no-repeat; }
 .room-state-content .right-r .click-text dl dd .live {
-  background-color: #9dc75b;
-}
+  background-color: #9dc75b; }
 .room-state-content .right-r .click-text dl dd .clean {
-  background-color: #00a8ec;
-}
+  background-color: #00a8ec; }
 .room-state-content .right-r .click-text dl dd .dirty-icon {
-  background-color: #959ea7;
-}
+  background-color: #959ea7; }
 .room-state-content .right-r .click-text dl dd .dirty-icon i {
   margin: 2px 0 0 0;
   width: 12px;
   height: 16px;
-  background-position: -331px -43px;
-}
+  background-position: -331px -43px; }
 .room-state-content .right-r .click-text dl dd .stop-icon {
-  background-color: #fd621f;
-}
+  background-color: #fd621f; }
 .room-state-content .right-r .click-text dl dd .stop-icon i {
   margin: 2px 0 0 0;
   width: 15px;
   height: 16px;
-  background-position: -347px -43px;
-}
+  background-position: -347px -43px; }
 .room-state-content .right-r .click-text dl dd .cleaning-icon {
-  background-color: #62b3b6;
-}
+  background-color: #62b3b6; }
 .room-state-content .right-r .click-text dl dd .cleaning-icon i {
   margin: 4px 0 0 0;
   width: 12px;
   height: 12px;
-  background-position: -366px -43px;
-}
+  background-position: -366px -43px; }
 .room-state-content .right-r .click-text dl dd .arrear-icon {
-  background-color: #d63c6e;
-}
+  background-color: #d63c6e; }
 .room-state-content .right-r .click-text dl dd .arrear-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right-r .click-text dl dd .inspect-icon {
-  background-color: #ffa308;
-}
+  background-color: #ffa308; }
 .room-state-content .right-r .click-text dl dd .inspect-icon i {
   width: 20px;
   height: 20px;
@@ -683,66 +554,53 @@ body, #wrapper, html {
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right-r .click-text dl dd .hour-icon {
-  background-color: #b65ece;
-}
+  background-color: #b65ece; }
 .room-state-content .right-r .click-text dl dd .hour-icon i {
   margin: 2px 0 0 0;
   width: 14px;
   height: 15px;
-  background-position: -397px -43px;
-}
+  background-position: -397px -43px; }
 .room-state-content .right-r .click-text dl dd .room-icon {
-  background-color: #98aed3;
-}
+  background-color: #98aed3; }
 .room-state-content .right-r .click-text dl dd .room-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right-r .click-text dl dd .secrecy-icon {
-  background-color: #9ea7b1;
-}
+  background-color: #9ea7b1; }
 .room-state-content .right-r .click-text dl dd .secrecy-icon i {
   margin: 3px 0 0 0;
   width: 12px;
   height: 13px;
-  background-position: -382px -43px;
-}
+  background-position: -382px -43px; }
 .room-state-content .right-r .click-text dl dd .vip-icon {
-  background-color: #e2c500;
-}
+  background-color: #e2c500; }
 .room-state-content .right-r .click-text dl dd .vip-icon i {
   font-style: inherit;
   color: #fff;
   font: 12px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
   text-align: center;
-  background: none;
-}
+  background: none; }
 .room-state-content .right-r .click-text dl dd .leave-icon {
-  background-color: #fde01f;
-}
+  background-color: #fde01f; }
 .room-state-content .right-r .click-text dl dd .leave-icon i {
   margin: 5px 0 0 0;
   width: 14px;
   height: 9px;
-  background-position: -415px -43px;
-}
+  background-position: -415px -43px; }
 .room-state-content .right-r .click-text dl dd span {
   float: left;
   margin-left: 10px;
   width: 45px;
   display: inline-block;
   color: #4c5363;
-  font: 14px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif;
-}
+  font: 14px/20px "Microsoft YaHei", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", STXihei, STHeiti, Heiti, SimSun, sans-serif; }
 .room-state-content .right-r .click-text dl dd span:nth-child(3) {
-  width: auto;
-}
+  width: auto; }
 .room-state-content .right-r .click-text dl dd .btn {
   margin-right: 3px;
   margin-top: 6px;
@@ -753,8 +611,7 @@ body, #wrapper, html {
   background-color: #c4c8d9;
   border-radius: 30px;
   font-size: 0;
-  cursor: pointer;
-}
+  cursor: pointer; }
 .room-state-content .right-r .click-text dl dd .btn:before {
   content: "";
   position: absolute;
@@ -769,11 +626,9 @@ body, #wrapper, html {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
+  transition: all 0.5s; }
 .room-state-content .right-r .click-text dl dd .btn.on {
-  background-color: #00a8ec;
-}
+  background-color: #00a8ec; }
 .room-state-content .right-r .click-text dl dd .btn.on:before {
   content: "";
   position: absolute;
@@ -788,7 +643,6 @@ body, #wrapper, html {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
+  transition: all 0.5s; }
 
 /*# sourceMappingURL=room-state.css.map */

@@ -78,7 +78,7 @@ body, #wrapper, html {
 				cursor:pointer;
 				i{
 					float:left;
-					margin-top:16px;
+					margin-top:10px;
 					display:block;
 					width:14px;
 					height:14px;
@@ -100,7 +100,7 @@ body, #wrapper, html {
 			}
 		}
 		.proportion{
-			padding:15px 10px;
+			padding:5px 10px;
 			margin-top:0px;
 			border-top: 1px solid #fff;
 			p.tltie{
@@ -162,12 +162,13 @@ body, #wrapper, html {
 				}
 			}
 			p{
+				    margin-bottom: 3px;
 				i{
 					margin-top:5px;
 					float:left;
 					border-radius:100%;
-					width:20px;
-					height:20px;				
+					width:15px;
+					height:15px;				
 				}
 				i.c1{
 					background-color:#a9d15b;
@@ -192,12 +193,12 @@ body, #wrapper, html {
 				}
 				span{
 					margin-left:5px;
-					font:14px/30px $publicFont;
+					font:14px/21px $publicFont;
 					color:#575e6d;
 				}
 				em{
 				    float:right;
-					font:14px/30px $publicFont;
+					font:14px/21px $publicFont;
 					color:#00a8ec;
 				}
 			}
@@ -244,7 +245,7 @@ body, #wrapper, html {
 		overflow:hidden;
 		// margin-bottom:-1000px;
 		.right-m{
-			margin:0 206px 0 45px;
+			margin:0 186px 0 45px;
 			ul{
 				li{
 					padding:5px;
@@ -410,7 +411,7 @@ body, #wrapper, html {
 	    top:5px;
 	    right:25px;
 	    z-index:9;
-		width:196px;
+		width:176px;
 		border-left: 1px solid #ddd;
 		min-height:100%;
 		.click{
@@ -457,7 +458,7 @@ body, #wrapper, html {
 		.click-text{
 			// padding-left:15px;
 			margin-left:10px;
-			width:186px;
+			width:166px;
 			height:auto;
 			// border-left:1px solid #ddd;
 			
@@ -500,7 +501,7 @@ body, #wrapper, html {
 			}
 			dl{
 				dt{
-					padding:10px 0;
+					padding:5px 0;
 					overflow: hidden;
 					>div{
 						float:left;
@@ -540,7 +541,7 @@ body, #wrapper, html {
 					}
 				}
 				dd{
-					padding:6px 0;
+					padding:5px 0;
 					overflow: hidden;
 					>div{
 						float:left;

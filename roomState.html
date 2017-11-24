@@ -38,7 +38,7 @@
 					<p><i class="c3"></i><span>今日预离</span><em>4</em></p>
 					<p><i class="c4"></i><span>今日预抵</span><em>2</em></p>
 					<p><i class="c5" class="c1"></i><span>剩余房间</span><em>77</em></p>
-					<p><i class="c6"></i><span>预算营收</span><em>100.7万</em></p>
+					<p><i style="margin-top:0" class="c6"></i><span>预算营收</span><em>100.7万</em></p>
 				</div>
 			</div>
 			<div class="right-l">
@@ -913,12 +913,12 @@
 		var flag=true;
 		$(".room-state-content .right-r .click").on("click",function(){
 			if(flag){
-				$(".room-state-content .right-r").css("right","-170px");
+				$(".room-state-content .right-r").css("right","-150px");
 				$(".room-state-content .right .right-m").css("marginRight","21px");
 				flag=false;
 			}else{
 				$(".room-state-content .right-r").css("right","25px");
-				$(".room-state-content .right .right-m").css("marginRight","206px");
+				$(".room-state-content .right .right-m").css("marginRight","186px");
 				flag=true;
 			}
 			$(this).toggleClass("active");
